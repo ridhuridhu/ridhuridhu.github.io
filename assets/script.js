@@ -81,6 +81,9 @@ function reply(msg){
         console.log("object");
         window.open('mailto:ridhuridhu05@gmail.com', '_blank');
     }
+    else if(msg==="HI"){
+        content="Hi!"
+    }
     else{
        var t=5;
        var content="I'm smart enough to know not to answer that command ";
