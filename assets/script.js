@@ -32,6 +32,7 @@ you have access to some of Ridhu's protocol :
 <ul>
     <li>About</li>
     <li>Contact </li>
+    <li>Resume</li>
     <li>who are you ?</li>
 <ul>
 <span class="metadata">
@@ -57,6 +58,7 @@ function reply(msg){
                 <li>mail</li>
                 <li>instagram</li>
                 <li>linkedin </li>
+                <li>github</li>
             </ul>
         </p> 
         `        
@@ -71,6 +73,9 @@ function reply(msg){
         
         `;
     }
+    else if(msg.includes("RESUME")){
+        content=`lol,Ridhu is too lazy to type his resume `;
+    }
     else if(msg.includes("LINKEDIN")){
         window.open('https://www.linkedin.com/in/ridhuridhu/', '_blank');
     }
@@ -82,6 +87,9 @@ function reply(msg){
     }
     else if(msg.includes("HI")){
         content="Hi!"
+    }
+    else if(msg.includes("GITHUB")){
+        window.open('https://github.com/ridhuridhu', '_blank');
     }
     else{
        var t=5;
