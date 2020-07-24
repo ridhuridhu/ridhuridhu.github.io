@@ -46,11 +46,11 @@ function reply(msg){
     msg=(msg.toUpperCase());
     var t=0;
    var content;
-    if(msg==="ABOUT"){
+    if(msg.includes("ABOUT")){
         content=`Ridhu,a undergrad at NIT Tiruchirappalli.`;
         
     }
-    else if(msg=="CONTACT"){
+    else if(msg.includes("CONTACT")){
         content=`<p>
         you have access to some of contact protocol
             <ul>
@@ -64,24 +64,23 @@ function reply(msg){
         ;
 
     }
-    else if(msg==="WHO ARE YOU ?" || msg==="WHO ARE YOU"){
-        content=`hey,I am <b>EDITH</b><span class="text-muted">(Even Death I am The Hero ) </span>,
-        a fictional artificial intelligence that first appeared in the Marvel Cinematic Universe .
+    else if(msg.includes("WHO") || msg==="WHO ARE YOU"){
+        content=`hey,I am Edith,Even Dead I'm The Hero ,
+        a fictional artificial intelligence that  appeared in the Marvel Cinematic Universe .
         
         
         `;
     }
-    else if(msg==="LINKEDIN"){
+    else if(msg.includes("LINKEDIN")){
         window.open('https://www.linkedin.com/in/ridhuridhu/', '_blank');
     }
-    else if(msg==="INSTAGRAM"){
+    else if(msg.includes("INSTAGRAM")){
         window.open('https://www.instagram.com/_ridhu_ridhu_/', '_blank');
     }
-    else if(msg==="MAIL"){
-        console.log("object");
+    else if(msg.includes("MAIL")){
         window.open('mailto:ridhuridhu05@gmail.com', '_blank');
     }
-    else if(msg==="HI"){
+    else if(msg.includes("HI")){
         content="Hi!"
     }
     else{
