@@ -1,5 +1,4 @@
 # ridhuridhu.github.io
 
 
-<a href="ridhuridhu.github.io"> Click here 
-</a>
+[Click Here](https://ridhuridhu.github.io/)
