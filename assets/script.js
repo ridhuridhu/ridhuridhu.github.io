@@ -39,6 +39,19 @@ you have access to some of Ridhu's protocol :
     <span class="time">${formatAMPM(new Date)}</span>
 </span>
 </div>`;
+function firstSpeak(){
+    if(bool){
+        speakNow(`Hey there,I am EDITH personal Assistant of Ridhu,he is busy with his works so he assigned me to take care of you !,Welcome`);
+        speakNow(`you have access to some of Ridhu's protocol :
+        About
+        Contact
+        Resume
+        who are you ?`);
+
+    }
+
+}setTimeout(firstSpeak,1500);
+
 
 AppendMsg(recMsg);
 AppendMsg(recMsg1);
@@ -49,6 +62,7 @@ function reply(msg){
    var content;
     if(msg.includes("ABOUT")){
         content=`Ridhu,a undergrad at NIT Tiruchirappalli.`;
+        speakNow("ridhu , undergrad at NIT-Trichy ");
         
     }
     else if(msg.includes("CONTACT")){
@@ -64,6 +78,7 @@ function reply(msg){
         `        
         
         ;
+        speakNow("you have access to some of contact protocol");
 
     }
     else if(msg.includes("WHO") || msg==="WHO ARE YOU"){
@@ -72,9 +87,13 @@ function reply(msg){
         
         
         `;
+        speakNow(`hey,I am Edith,Even Dead I'm The Hero ,
+        a fictional artificial intelligence that  appeared in the Marvel Cinematic Universe .`);
+
     }
     else if(msg.includes("RESUME")){
         content=`lol,Ridhu is too lazy to type his resume `;
+        speakNow("Ridhu is too lazy to type his resume ");
     }
     else if(msg.includes("LINKEDIN")){
         window.open('https://www.linkedin.com/in/ridhuridhu/', '_blank');
@@ -87,6 +106,7 @@ function reply(msg){
     }
     else if(msg.includes("HI")){
         content="Hi!"
+        speakNow("..........hi");
     }
     else if(msg.includes("GITHUB")){
         window.open('https://github.com/ridhuridhu', '_blank');
@@ -94,6 +114,8 @@ function reply(msg){
     else{
        var t=5;
        var content="I'm smart enough to know not to answer that command ";
+        speakNow("I'm smart enough to know not to answer that command");
+    
     }
     
     if(content){
