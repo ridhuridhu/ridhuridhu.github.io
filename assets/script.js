@@ -39,19 +39,6 @@ you have access to some of Ridhu's protocol :
     <span class="time">${formatAMPM(new Date)}</span>
 </span>
 </div>`;
-function firstSpeak(){
-    if(bool){
-        speakNow(`Hey there,I am EDITH personal Assistant of Ridhu,he is busy with his works so he assigned me to take care of you !,Welcome`);
-        speakNow(`you have access to some of Ridhu's protocol :
-        About
-        Contact
-        Resume
-        who are you ?`);
-
-    }
-
-}setTimeout(firstSpeak,1500);
-
 
 AppendMsg(recMsg);
 AppendMsg(recMsg1);
@@ -115,6 +102,7 @@ function reply(msg){
        var t=5;
        var content="I'm smart enough to know not to answer that command ";
         speakNow("I'm smart enough to know not to answer that command");
+        speakNow(`you have access to some of Ridhu's protocol `);
     
     }
     
