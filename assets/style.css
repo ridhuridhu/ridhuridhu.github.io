@@ -1,10 +1,12 @@
-#microphone{
+#microphone {
     align-self: start;
     margin-left: 0px;
 }
-body{
+
+body {
     background-image: url("./images/background.jpg");
 }
+
 /* device Layout Css */
 .marvel-device {
     display: inline-block;
