@@ -105,7 +105,7 @@ function reply(msg){
         window.open('mailto:ridhuridhu05@gmail.com', '_blank');
     }
     else if(msg.includes("HI")){
-        content="Hi!"
+        content="Hi!";
         speakNow("..........hi");
     }
     else if(msg.includes("GITHUB")){

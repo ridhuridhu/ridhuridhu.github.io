@@ -38,7 +38,7 @@ function speakNow(txtSpeak) {
   utterThis.pitch = 1.5;
   utterThis.rate = 0.8;
   synth.speak(utterThis);
-  console.log(synth);
+  //console.log(synth);
     
   
 
