@@ -23,7 +23,7 @@ $("form").on("submit", messageSubmit);
 
 const recMsg = `  <div class="message received">
 <p>
-Hey there,I am <b>EDITH </b> personal Assistant of Ridhu,he is busy with his works so he assigned me to take care of you !,Welcome :)
+Hey there, I'm <b>EDITH</b> personal Assistant of Ridhu, He is busy with his works so he assigned me to take care of you, Welcome :)
 <span class="metadata"><span class="time">${formatAMPM(new Date)}</span></span>
 </p>
 
@@ -34,7 +34,7 @@ you have access to some of Ridhu's protocol :
     <li>About</li>
     <li>Contact </li>
     <li>Resume</li>
-    <li>who are you ?</li>
+    <li>who are you?</li>
 <ul>
 <span class="metadata">
     <span class="time">${formatAMPM(new Date)}</span>
@@ -49,8 +49,8 @@ function reply(msg) {
     var t = 0;
     var content;
     if (msg.includes("ABOUT")) {
-        content = `Ridhu,a undergrad at NIT Tiruchirappalli.`;
-        speakNow("ridhu , undergrad at NIT-Trichy ");
+        content = `Ridhu, Undergrad at NIT Tiruchirappalli.`;
+        speakNow("Ridhu, undergrad at NIT-Trichy ");
 
     } else if (msg.includes("CONTACT")) {
         content = `<p>
@@ -68,16 +68,15 @@ function reply(msg) {
         speakNow("you have access to some of contact protocol");
 
     } else if (msg.includes("WHO") || msg === "WHO ARE YOU") {
-        content = `hey,I am Edith,Even Dead I'm The Hero ,
-        a fictional artificial intelligence that  appeared in the Marvel Cinematic Universe .
+        content = `Hey, I'm Edith, Even Dead I'm The Hero, a fictional artificial intelligence that appeared in the Marvel Cinematic Universe.
         
         
         `;
-        speakNow(`hey,I am Edith,Even Dead I'm The Hero ,
-        a fictional artificial intelligence that  appeared in the Marvel Cinematic Universe .`);
+        speakNow(`hey,I'm Edith,Even Dead I'm The Hero ,
+        a fictional artificial intelligence that  appeared in the Marvel Cinematic Universe.`);
 
     } else if (msg.includes("RESUME")) {
-        content = `lol,Ridhu is too lazy to type his resume `;
+        content = `lol, Ridhu is too lazy to type his resume `;
         speakNow("Ridhu is too lazy to type his resume ");
     } else if (msg.includes("LINKEDIN")) {
         window.open('https://www.linkedin.com/in/ridhuridhu/', '_blank');
@@ -87,7 +86,7 @@ function reply(msg) {
         window.open('mailto:ridhuridhu05@gmail.com', '_blank');
     } else if (msg.includes("HI")) {
         content = "Hi!";
-        speakNow("..........hi");
+        speakNow("hi");
     } else if (msg.includes("GITHUB")) {
         window.open('https://github.com/ridhuridhu', '_blank');
     } else {
@@ -107,12 +106,9 @@ function reply(msg) {
 </div>`;
         AppendMsg(replyMsg);
     }
-
     if (t == 5) {
         AppendMsg(recMsg1);
     }
-
-
 }
 
 const EdithFullForm = "Even dead,I'm the hero. ";
@@ -120,17 +116,9 @@ const EdithFullForm = "Even dead,I'm the hero. ";
 function AppendMsg(msg) {
     const msgContainer = document.getElementsByClassName("conversation-container");
     $(".conversation-container").append(msg);
-
-
 }
 
-
-
-
-
 function messageSubmit(e) {
-
-
     e.preventDefault();
     const input_msg = document.getElementById("input-msg");
     if (input_msg.value) {
